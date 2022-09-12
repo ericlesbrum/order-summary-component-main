@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('attribution.css');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 50% -60%; 
+    background-color: var(--Pale-blue);
+    text-align: center;
+}
+main{
+    max-width: 420px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+main header img{
+    width: 100%;
+}
+main header{
+    margin-bottom: 30px;
+}
+main article h1{
+    color: var(--Dark-blue);
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+main article p{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    padding: 0 10px;
+    margin: 0 35px 20px 35px;
+}
+.plan{
+    width: 80%;
+    font-size: 1rem;
+    background-color: var(--Pale-blue);
+    display: flex;
+    border-radius: 12px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.plan .type-plan
+{
+    width: 35%;
+    margin-left: 15px;
+    margin-right: 85px;
+}
+.plan .type-plan span:first-child{
+    display: block;
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+.plan .type-plan span:last-child{
+    display: block;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+.plan a{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.payment{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.payment button{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.payment button:first-child{
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    margin-bottom: 10px;
+}
+.payment button:last-child{
+    color: var(--Desaturated-blue);
+    background-color: var(--Very-pale-blue);
+    margin-bottom: 20px;
+}
